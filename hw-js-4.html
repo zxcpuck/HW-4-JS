@@ -117,15 +117,18 @@
     // objList(objArray);
 
     // - створити функцію яка повертає найменьше число з масиву
-    // function smallestNumber(){
-    //     let smallest = myArray[0]
-    //     for (let number of myArray) {
-    //     }
-    //     return smallest;
-    // }
-    // let myArray = [-6,1,2,3,7,9,4,8,5,7,-1,-5,-2,0]
-    // let theSmallest = smallestNumber(myArray);
-    // console.log('Smallest number is ' + theSmallest);
+    function smallestNumber(){
+        let smallest = myArray[0]
+        for (let number of myArray) {
+            if (number<smallest){
+                smallest=number
+            }
+        }
+        return smallest;
+    }
+    let myArray = [1,2,3,7,9,4,8,5,7,-1,-5,-2,0,-200]
+    let theSmallest = smallestNumber(myArray);
+    console.log('Smallest number is ' + theSmallest);
 
     // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його.
     // function sum(array){
@@ -142,15 +145,15 @@
 
 
     // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
-    function swap(arr,index1,index2,index3,index4){
-        let temp = arr[index3];
-        arr[index3] = arr[index4];
-        arr[index4] = temp;
-        return arr;
-    }
-    let arr = [11,22,33,44];
-    let results = swap(arr,0,1,2,3);
-    console.log(results)
+    // function swap(arr,index1,index2,index3,index4){
+    //     let temp = arr[index3];
+    //     arr[index3] = arr[index4];
+    //     arr[index4] = temp;
+    //     return arr;
+    // }
+    // let arr = [11,22,33,44];
+    // let results = swap(arr,0,1,2,3);
+    // console.log(results)
 
 </script>
 </body>
