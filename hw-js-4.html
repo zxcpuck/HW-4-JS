@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+
+    // function calc (a,b){
+    //     let S = a * b;
+    //     alert ('Площа трикутника - ' + S )
+    //     return null;
+    // }
+    // calc(12,5);
+
+    // - створити функцію яка обчислює та повертає площу кола з радіусом r
+
+    // function calc2 (a , b){
+    //     let r = b * b;
+    //     let A = a * r;
+    //     alert ('Площа кола - ' + A )
+    //     return null;
+    // }
+    // calc2(3.14,5)
+
+    // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+    // function calc3(a,b){
+    //     let r = 4;
+    //     let rr = r * r;
+    //     let h = 10;
+    //     let p = 3.14;
+    //     let S = ((2 * p) * r * h) + (2 * p) * rr
+    //     alert('Площа циліндра - ' + S)
+    //     return null;
+    // }
+    // calc3()
+
+    // - створити функцію яка приймає масив та виводить кожен його елемент
+    // function arrayList5(array){
+    //     array.forEach(function (element){
+    //         console.log(element)
+    //     })
+    // }
+    // let myArray3000 = [1,2,4,5,6];
+    // arrayList5(myArray3000)
+
+
+    // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    // function paragraph (text){
+    //     let pt = document.createElement('p')
+    //     pt.textContent = text;
+    //     return pt;
+    // }
+    // let text = "Tp[fogp[sodfp[gsdf";
+    // let pe = paragraph(text);
+    // document.body.appendChild(pe);
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+    // function list(text){
+    //     let ul = document.createElement('ul')
+    //     for (let i = 0; i < 3; i++) {
+    //         let li = document.createElement('li')
+    //         li.textContent = text;
+    //         ul.appendChild(li)
+    //     }
+    //     return ul;
+    // }
+    // let textElement = "Random txt"
+    // let listElement = list(textElement);
+    // document.body.appendChild(listElement)
+
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+    // function list2 (text,number){
+    //     let ul = document.createElement('ul')
+    //     for (let i = 0; i < number; i++) {
+    //         let li = document.createElement('li')
+    //         li.textContent = text;
+    //         ul.appendChild(li);
+    //     }
+    //     return ul;
+    // }
+    // let listElement = list2('text',3);
+    // document.body.appendChild(listElement);
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+    // function massList (array){
+    //     let ul = document.createElement('ul')
+    //     for (let i = 0; i < array.length; i++) {
+    //         let li = document.createElement('li')
+    //         li.textContent = array[i];
+    //         ul.appendChild(li)
+    //     }
+    //     return ul;
+    // }
+    // let myArray = [1,'two',true];
+    // let listElement = massList(myArray)
+    // document.body.appendChild(listElement)
+
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    // function objList(array){
+    //     array.forEach(function (obj){
+    //         let div = document.createElement('div');
+    //         div.textContent = 'ID - ' + obj.id + ', Name - ' + obj.name + ', Age - ' + obj.age;
+    //         document.body.appendChild(div)
+    //     })
+    // }
+    // let objArray = [
+    //     { id: 1, name: "John", age: 25 },
+    //     { id: 2, name: "Alice", age: 30 },
+    //     { id: 3, name: "Bob", age: 40 }];
+    // objList(objArray);
+
+    // - створити функцію яка повертає найменьше число з масиву
+    // function smallestNumber(){
+    //     let smallest = myArray[0]
+    //     for (let number of myArray) {
+    //     }
+    //     return smallest;
+    // }
+    // let myArray = [-6,1,2,3,7,9,4,8,5,7,-1,-5,-2,0]
+    // let theSmallest = smallestNumber(myArray);
+    // console.log('Smallest number is ' + theSmallest);
+
+    // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+    // function sum(array){
+    //     let startSumaOfArray = 0
+    //     for (let arr of array) {
+    //         startSumaOfArray += arr;
+    //     }
+    //     return startSumaOfArray;
+    // }
+    //
+    // let myArray = [1,2,3,4,5,6,7,8,9,10]
+    // let sumaOfNumber = sum(myArray)
+    // console.log('Suma vsih chisel = ' + sumaOfNumber)
+
+
+    // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+    function swap(arr,index1,index2,index3,index4){
+        let temp = arr[index3];
+        arr[index3] = arr[index4];
+        arr[index4] = temp;
+        return arr;
+    }
+    let arr = [11,22,33,44];
+    let results = swap(arr,0,1,2,3);
+    console.log(results)
+
+</script>
+</body>
+</html>
